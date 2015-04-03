@@ -21,6 +21,7 @@ server = TCPServer.new('localhost', 5678)
                    "Content-Length: #{file.size}\r\n" +
                    "Connection: close\r\n"
 
+          # print blank line necessary for specification:
           socket.print "\r\n"
 
           # Write the contents of the file to the socket

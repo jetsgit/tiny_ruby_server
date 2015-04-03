@@ -2,7 +2,7 @@
 
 #### Usage:
 
-* Run with ruby, `ruby ./file_server.rb`
+* Run with ruby, `ruby ./test/file_server.rb`
 * Navigate to a file, e.g.  http://5678:SeaSerpent.jpg
 
 #### Features
