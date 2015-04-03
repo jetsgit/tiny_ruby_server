@@ -2,6 +2,7 @@
 
 lib = File.expand_path(File.join(*%w[.. lib]), File.dirname(__FILE__))
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'tiny_ruby_server/version'
 
 Gem::Specification.new do |gem|
   gem.name                = 'tiny_ruby_server'
