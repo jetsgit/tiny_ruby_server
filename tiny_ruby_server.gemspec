@@ -1,3 +1,8 @@
+# coding: utf-8
+
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
 Gem::Specification.new do |gem|
   gem.name                = 'tiny_ruby_server'
   gem.version             = '0.1'
@@ -7,4 +12,6 @@ Gem::Specification.new do |gem|
   gem.authors             = ["Jerry Thompson"]
   gem.email               = 'jerrold.r.thompson@gmail.com'
   gem.homepage            = 'https://github.com/jetsgit/tiny_ruby_server'
+  gem.files               = `git ls-files`.split($/)
+  gem.require_paths       = ["lib"]
 end
