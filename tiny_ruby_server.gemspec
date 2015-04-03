@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name                = 'tiny_ruby_server'
-  gem.version             = '0.1'
+  gem.version             = TinyRubyServer::VERSION
   gem.date                = '2015-04-02'
   gem.summary             = "Tiny Ruby Server"
   gem.description         = "A tiny, secure Ruby file server"

@@ -1,5 +1,6 @@
 require 'socket'
 require 'uri'
+require 'tiny_ruby_server/version'
 
 module TinyRubyServer
 
