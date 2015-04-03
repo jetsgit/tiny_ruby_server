@@ -21,7 +21,7 @@ module TinyRubyServer
   # Helper function to parse extension of requested file,
   # then looks up its content type:
 
-  def content_type(path)
+  def self.content_type(path)
     ext = File.extname(path).split(".").last
     CONTENT_TYPE_MAPPING.fetch(ext, DEFAULT_CONTENT_TYPE)
   end
@@ -35,7 +35,7 @@ module TinyRubyServer
   # In fact, the below was added in 2013 specifically to deal with such a 
   # security vulnerablility
 
-  def requested_file(request_line)
+  def self.requested_file(request_line)
     request_uri  = request_line.split(" ")[1]
     path         = URI.unescape(URI(request_uri).path)
 
