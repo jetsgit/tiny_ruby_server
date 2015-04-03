@@ -1,4 +1,4 @@
-### Demo of simple ruby web server
+### Demo of Simple Ruby Web Werver to View Files 
 
 #### Usage:
 
@@ -9,4 +9,5 @@
 
 * Will only serve files in `public` directory
 * Incorporates security features implemented in `Rack::File` to ensure only authorized files are accessed.
+* Uses `IO.copy_stream(file, socket)`
 * Will continue to serve files until killed.
