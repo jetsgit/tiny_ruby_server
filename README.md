@@ -1,4 +1,4 @@
-### Demo of Simple Ruby Web Werver to View Files 
+### Demo of Simple Ruby Web Server to View Files 
 
 #### Usage:
 
